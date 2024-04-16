@@ -12,10 +12,10 @@ position:absolute;
 top: 0;
 left: 0;
 width:auto;
-padding: 15px 15%;
+padding: 20px 20%;
 background-color:transparent;
 display: flex;
-z-index: 100;
+z-index: 300;
 }
 .logo {
     justify-content: baseline;
@@ -28,8 +28,8 @@ z-index: 100;
     font-size: 18px;
     color: rgb(61, 44, 24);
     text-decoration: none;
-    font-weight: 400;
-    margin-left:300px;
+    font-weight: 200;
+    margin-left:100px;
     transition: 1s;
 }
 .navbar a:hover,
@@ -77,4 +77,16 @@ font-size: 16px;
     font-size: 40px;
     color:rgb(125, 137, 245);
     text-decoration: none;
+    overflow: hidden;
+}
+.sobre-sci a::before {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aqua;
+    z-index: -1;
+    transition: 5s;
 }
